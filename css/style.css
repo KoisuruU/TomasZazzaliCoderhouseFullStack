@@ -1,5 +1,3 @@
-header{
-        background-color:rgb(159, 151, 177, 0.75);}
 body {
     margin: 0; 
     padding: 0; 
@@ -11,10 +9,47 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    width: auto;}
-/* Previamente era class background, pero estoy probando a ponerle el fondo directo al body, por eso lo tengo separado al otro body             */
-/* Previamente era class "blur", por eso lo tengo separado al otro body         */
+    height: 100vh;
+    width: auto; 
+    box-sizing: border-box;}
+/* BODY END */
+/* INDEX */
+#gridindex {display: grid;
+    grid-template-areas:
+        "header1 header1 header1"
+        "intro imagefill2 textfill1"
+        "debutmv1 debutmv1 mvtext"
+        "footer1 footer1 footer1" ;
+    grid-template-rows: 74px 480px 480px 20px;
+    grid-template-columns: 1fr 3fr 2fr;}
+header {
+    grid-area: header1;
+    background-color:rgb(159, 151, 177, 0.75);
+    background-size: cover;
+    background-position: center;}
+footer {
+    grid-area: footer1;
+    background-color: rgb(159, 151, 177, 0.75);
+    margin-bottom: 0px;}
+.intro {
+    grid-area: intro;
+    align-self: center;
+    justify-self: center;}
+.textfill {
+    grid-area: textfill1;
+    align-self: center;
+    justify-self: center;}
+.imagefill {
+    grid-area: imagefill2;
+    background-image: url(https://pbs.twimg.com/media/FGkLDdOUUAA0h9O?format=jpg&name=4096x4096); background-size: cover; background-position: center;}
+.textfill2 { grid-area: mvtext;
+    align-self: center;
+    justify-self: center;}
+.debutmv {
+    grid-area: debutmv1;
+    align-self: center;
+    justify-self: center;}
+
 .menu {
     list-style: none; 
     display: inline; 
@@ -25,6 +60,7 @@ body {
     font-style: italic;}
 .menutext:hover {
     background-color:rgba(133, 115, 177, 0.5);}
+/* INDEX END*/
 li {
     display: inline-block; 
     text-align: center;  
@@ -50,13 +86,13 @@ span {
     color: crimson;}
 h2 {
     color: rgb(72, 168, 208); 
-    font-size: 200%;}
+    font-size: 150%;}
 h3 {
     color: black}
 article {
-    color: rgb(72, 168, 208); 
+    color: crimson; 
     font-weight: bold;
-    font-size: 200%;}
+    font-size: 150%;}
 table { 
     color: crimson; 
     border-style: double; 
