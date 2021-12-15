@@ -1,0 +1,77 @@
+header{
+        background-color:rgb(159, 151, 177, 0.75);}
+body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%;
+    min-width: 1000px; 
+    min-height: 100vh;
+    background-image: url(https://pbs.twimg.com/media/FEqJ_sEVkAYTgbG?format=jpg&name=large);
+    backdrop-filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;}
+/* Previamente era class background, pero estoy probando a ponerle el fondo directo al body, por eso lo tengo separado al otro body             */
+/* Previamente era class "blur", por eso lo tengo separado al otro body         */
+.menu {
+    list-style: none; 
+    display: inline; 
+    text-align: center; 
+    display: inline-block; 
+    vertical-align: top;
+    word-spacing: 30px;
+    font-style: italic;}
+.menutext:hover {
+    background-color:rgba(133, 115, 177, 0.5);}
+li {
+    display: inline-block; 
+    text-align: center;  
+    line-height: 40px;
+    word-spacing: 0px;
+    position: relative;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;}
+ul.memberslist { 
+    text-align: center;
+    margin: 0 auto; 
+    display: inline-block;
+    overflow: hidden; 
+    word-spacing: 20px;}
+li.memberslist:hover {
+    font-style:italic}
+.textcolor {
+    color: crimson;}
+h1 {
+    color:rgb(72, 168, 208)}
+span {
+    color: crimson;}
+h2 {
+    color: rgb(72, 168, 208); 
+    font-size: 200%;}
+h3 {
+    color: black}
+article {
+    color: rgb(72, 168, 208); 
+    font-weight: bold;
+    font-size: 200%;}
+table { 
+    color: crimson; 
+    border-style: double; 
+    border-color: black; 
+    background-color: rgb(72, 168, 208, 0.5);}
+hr {
+    color: black;}
+.memberspic {
+    text-align: center;}
+.form {
+    font-size: x-large;}
+
+
+
+
+
+
+
