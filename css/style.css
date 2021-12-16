@@ -1,8 +1,10 @@
+header{
+        background-color:rgb(159, 151, 177, 0.75);}
 body {
     margin: 0; 
     padding: 0; 
     width: 100%;
-    min-width: 300px; 
+    min-width: 900px; 
     min-height: 100vh;
     background-image: url(https://pbs.twimg.com/media/FEqJ_sEVkAYTgbG?format=jpg&name=large);
     backdrop-filter: blur(8px);
@@ -38,18 +40,19 @@ footer {
 .textfill {
     grid-area: textfill1;
     align-self: center;
-    justify-self: center;}
+    justify-self: left;}
 .imagefill {
     grid-area: imagefill2;
     background-image: url(https://pbs.twimg.com/media/FGkLDdOUUAA0h9O?format=jpg&name=4096x4096); background-size: cover; background-position: center;}
 .textfill2 { grid-area: mvtext;
     align-self: center;
-    justify-self: center;}
+    justify-self: left;}
 .debutmv {
     grid-area: debutmv1;
     align-self: center;
     justify-self: center;}
-
+/* Previamente era class background, pero estoy probando a ponerle el fondo directo al body, por eso lo tengo separado al otro body             */
+/* Previamente era class "blur", por eso lo tengo separado al otro body         */
 .menu {
     list-style: none; 
     display: inline; 
@@ -73,10 +76,13 @@ footer {
         "footerv footerv";
     grid-template-rows: 74px 320px 320px 50px 320px 20px;
     grid-template-columns: 50% 50%;}
-.headervid {grid-area: header1;
+header {grid-area: header1;
     background-color:rgb(159, 151, 177, 0.75);
     background-size: cover;
     background-position: center;}
+.menu { display: inline-block;
+vertical-align: top;
+text-align: center;}
 .ringxring {
     grid-area: ringxring;
     align-self: center;
@@ -104,7 +110,7 @@ footer {
 .collabinfo {
     grid-area: collabinfo;
     align-self: center;
-    justify-self: center;}
+    justify-self: auto;}
 .footervideos {
     grid-area: footerv;
     background-color: rgb(159, 151, 177, 0.75);
@@ -166,13 +172,13 @@ span {
     color: crimson;}
 h2 {
     color: rgb(72, 168, 208); 
-    font-size: 150%;}
+    font-size: auto;}
 h3 {
     color: black}
 article {
-    color: crimson; 
+    color: rgb(72, 168, 208); 
     font-weight: bold;
-    font-size: 150%;}
+    font-size: auto;}
 table { 
     color: crimson; 
     border-style: double; 
