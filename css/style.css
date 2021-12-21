@@ -230,7 +230,8 @@ hr {
     .twittertimeline {
         grid-area: twitterfeed2;
         align-self: center;
-        justify-self: center;}
+        justify-self: center;
+        height: 700px;}
     .footernews {
         background-color: lightgreen;
     }
