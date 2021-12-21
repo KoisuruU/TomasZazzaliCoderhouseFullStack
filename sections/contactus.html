@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Welcome to the Billage!</title>
 </head>
 <body>
-    <header>
+    <div id="contactgrid">
+    <header class="headercontact">
         <nav class="menusec">
             <a href="http://www.mystic89.net/artist/billlie" target="_blank"><img src="/images/billlielogo.png" height="71"></a>
                 <ul class="menu">
@@ -17,35 +18,35 @@
                     <li class="menutext"><a href="./members.html"          style="text-decoration: none">Members</a></li>
                     <li class="menutext"><a href="./news.html"             style="text-decoration: none">News</a></li>
                     <li class="menutext"><a href="./contactus.html"        style="text-decoration: none">Contact Us</a></li>
-                </ul><hr>
+                </ul>
             </nav>    
     </header> 
-    <h2>Social networks</h2>
-        <a href="https://twitter.com/Billlieofficial" target="_blank"><img src="/images/Twitter.png" height="50px" width="50px"></a>
-        <a href="https://cafe.daum.net/Billlie" target="_blank"><img src="/images/daumcafe.png" height="50px" width="50px"></a>
-    <h2>Billagers</h2>
-        <form class="form" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-            <label for="cell1">Name</label>
-            <input type="text" name="cell1"><br>
-            <label for="cell1">Email</label>
-            <input type="email" name="cell2"><br>
-             Age <input type="date"><br>
-             Your favorite song! <input type="text"><br>
-             <div> Receive notifications!
-            <input type="checkbox" value="1">
-            </div>
-            <legend>Choose your bias!</legend>
-            <select name="Bias">
-                <option>Moon Sua<br></option>
-                <option>Suhyeon<br></option>
-                <option>Haram<br></option>
-                <option>Tsuki<br></option>
-                <option>Sheon<br></option>
-                <option>Siyeoon<br></option>
-                <option>Haruna<br></option></select><br>
-        <input type="submit" value="Send" target="_blank">
-    </form>   
-<hr>   
-<footer>2021 © MYSTIC STORY. ALL RIGHTS RESERVED. - Tomas Zazzali: Desafio Coderhouse</footer>
+        <h2>Social networks</h2>
+            <a href="https://twitter.com/Billlieofficial" target="_blank"><img src="/images/Twitter.png" height="50px" width="50px"></a>
+            <a href="https://cafe.daum.net/Billlie" target="_blank"><img src="/images/daumcafe.png" height="50px" width="50px"></a>
+        <h2>Billagers</h2>
+        <div id="contacthijo">
+            <form class="form" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
+                <label for="cell1">Name</label>
+                <input type="text" name="cell1"><br>
+                <label for="cell1">Email</label>
+                <input type="email" name="cell2"><br>
+                    Age <input type="date"><br>
+                    Your favorite song! <input type="text"><br>
+                    Receive notifications!<input type="checkbox" value="1">
+                <legend>Choose your bias!</legend>
+                    <select name="Bias">
+                    <option>Moon Sua<br></option>
+                    <option>Suhyeon<br></option>
+                    <option>Haram<br></option>
+                    <option>Tsuki<br></option>
+                    <option>Sheon<br></option>
+                    <option>Siyeoon<br></option>
+                    <option>Haruna<br></option></select><br>
+                <input type="submit" value="Send" target="_blank">
+            </form>
+        </div>
+    </div>  
+<footer class="footercontact">2021 © MYSTIC STORY. ALL RIGHTS RESERVED. - Tomas Zazzali: Desafio Coderhouse</footer>
 </body>
 </html>
