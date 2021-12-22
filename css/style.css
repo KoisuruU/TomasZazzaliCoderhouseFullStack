@@ -10,7 +10,7 @@ body {
     backdrop-filter: blur(8px);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     height: 100%;
     width: auto; 
     box-sizing: border-box;}
@@ -29,7 +29,7 @@ header {
     background-color:rgba(160, 139, 211, 0.75);
     background-size: cover;
     background-position: center;}
-footer {
+.footerindex {
     grid-area: footer1;
     background-color: rgb(159, 151, 177, 0.75);
     margin-bottom: 0px;}
@@ -75,7 +75,7 @@ footer {
         "collab1 collab2"
         "footerv footerv";
     grid-template-rows: 74px 320px 320px 50px 320px 20px;
-    grid-template-columns: 50% 50%;}
+    grid-template-columns: 1fr 1fr;}
 header {grid-area: header1;
     background-color:rgb(159, 151, 177, 0.75);
     background-size: cover;
@@ -160,9 +160,12 @@ ul.memberslist {
     overflow: hidden; 
     word-spacing: 20px;}
 li.memberslist:hover {
-    font-style:italic}
-.textcolor {
-    color: crimson;}
+    /* Cambios para el desafio de animaciones */
+    font-style:italic;
+    font-size: xx-large;}
+.textcolor:hover {
+    color: violet;}
+    /* Cambios para el desafio de animaciones */
 h1 {
     color:rgb(72, 168, 208)}
 span {
@@ -175,20 +178,48 @@ h3 {
 article {
     color: rgb(72, 168, 208); 
     font-weight: bold;
-    font-size: auto;}
+    font-size: x-large;}
 table { 
     color: crimson; 
-    border-style: double; 
+    border-style:ridge; 
     border-color: black; 
-    background-color: rgb(72, 168, 208, 0.5);}
+    background-color: rgba(127, 185, 209, 0.8);}
 hr {
     color: black;}
 .memberspic {
-    text-align: center;}
+    text-align: center;
+    position: relative;
+    z-index: 1;}
+
+/*Efecto para desafio animaciones  */
+.billliepic:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.75rem violet) saturate(1.5);
+}
+.imagefill:hover {
+    transform: scale(1.1);
+    filter:drop-shadow(0 0 0.75rem crimson) brightness(1.1)}
+.rolestable {
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 50px;
+}
+table:hover {
+    transform: scale(1.4);
+    filter: drop-shadow(0 0 0.75rem rgb(85, 134, 240));
+}
+.footermembers {
+    background-color: rgb(159, 151, 177, 0.75) ;
+}
+
+
+/*Efecto para desafio animaciones  */
+                
 .form {
     font-size: x-large;}
 
-@media screen and (max-width:767px) {
+
+@media screen and (max-width:375px) {
     #gridhome {
     display: grid;
     gap: 2px;
@@ -231,7 +262,8 @@ hr {
         grid-area: twitterfeed2;
         align-self: center;
         justify-self: center;
-        height: 700px;}
+        height: 700px;
+    width: 370px;}
     .footernews {
         background-color: lightgreen;
     }
