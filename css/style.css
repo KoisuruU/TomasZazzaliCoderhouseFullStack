@@ -159,8 +159,9 @@ ul.memberslist {
     display: inline-block;
     overflow: hidden; 
     word-spacing: 20px;}
-li.memberslist:hover {
     /* Cambios para el desafio de animaciones */
+.textcolor {color: crimson;}
+li.memberslist:hover {
     font-style:italic;
     font-size: xx-large;}
 .textcolor:hover {
